@@ -32,18 +32,18 @@ const getAddToGroupButton = botUsername => ({
 })
 const getGreetMessage = ({botUsername, isGroup}) => [
 	trueTrim(`
-	👋 Salam. Я — бот для игры в «угадай возраст» в групповых чатах.
+	Salam.👋🏻 Mən Qruplarda Yaş Təxmin Etmə Botuyam.
 
-	📋 Правила просты: я кидаю вам фото человека, а ваша задача быстро угадать его возраст. Просто отправьте предполагаемый возраст цифрами в чат и я учту ваш голос. Чем точнее вы отвечаете, тем меньше баллов теряете.
+	📋 Məni Qrupa Salaraq Əylənə Bilərsiniz.
 	${isGroup ? "" : "\n😉 Для начала, добавь меня в *групповой чат* и вызови /game.\n"}
 	*Команды:*
-	/game - 🕹 Новая игра
+	/game - 🕹 Oyunu Başla
 	/stop - 🛑 Остановить игру
 	/top - 🔝 Рейтинг игроков чата
 	/chart - 🌎 Глобальный рейтинг
 	/donate - 💸 Поддержать проект
 
-	Канал автора: @FilteredInternet ❤️ 
+	bot 0 dan yazılıb owner @vusallldi
 `),
 	isGroup ? null : getAddToGroupButton(botUsername),
 ]
