@@ -23,7 +23,7 @@ const getAddToGroupButton = botUsername => ({
 		inline_keyboard: [
 			[
 				{
-					text: "Добавить бота в группу 👥",
+					text: "➕ Qrupa Əlavə Et",
 					url: `https://t.me/${botUsername}?startgroup=add`,
 				},
 			],
@@ -32,7 +32,7 @@ const getAddToGroupButton = botUsername => ({
 })
 const getGreetMessage = ({botUsername, isGroup}) => [
 	trueTrim(`
-	👋 Привет. Я — бот для игры в «угадай возраст» в групповых чатах.
+	👋 Salam. Я — бот для игры в «угадай возраст» в групповых чатах.
 
 	📋 Правила просты: я кидаю вам фото человека, а ваша задача быстро угадать его возраст. Просто отправьте предполагаемый возраст цифрами в чат и я учту ваш голос. Чем точнее вы отвечаете, тем меньше баллов теряете.
 	${isGroup ? "" : "\n😉 Для начала, добавь меня в *групповой чат* и вызови /game.\n"}
